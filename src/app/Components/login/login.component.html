@@ -1,0 +1,7 @@
+
+<form class="login" [formGroup]="form" *ngIf="!loggedIn()" >
+    <h3>Kullanıcı Girişi</h3>
+    <input type="text" placeholder="E Mail" formControlName="eMail" name="eMail" required>
+    <input type="password" placeholder="Şifre" formControlName="password" name="password" required>
+    <button (click)="login()" class="btn btn-danger" type="submit">Giriş Yap</button>
+</form>
